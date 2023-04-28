@@ -75,7 +75,7 @@ body.active{
     position:absolute;content:'';width:3px;height:40px;background:#3498db;background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));top:100%;left:240px;
 }
 #experience-timeline .vtimeline-content{
-    max-width:600px; margin-left:300px;background:#fff;border:1px solid #e6e6e6;padding:15px;border-radius:3px;text-align:justify;
+    position:absolute;max-width:600px; margin-left:300px;background:#fff;border:1px solid #e6e6e6;padding:15px;border-radius:3px;text-align:justify;
 }
 #experience-timeline .vtimeline-content h3{
     font-size:1.5em;font-weight:300;color:#374054;display:inline-block;margin:0;
@@ -88,13 +88,16 @@ body.active{
     color:#74808a;font-size:0.9em;margin:0;
 }
 #experience-timeline .vtimeline-point{
-    position:relative;
+    position:absolute;
+    /* position:relative; */
     display:block;
     vertical-align:top;
     margin-bottom:30px;
 }
 #experience-timeline .vtimeline-icon{
-    position:relative;color:#fff;
+    position:absolute;
+    /* position:relative; */
+    color:#fff;
     width:50px;height:50px;
     background:#246a99;
     border-radius:50%;float:left;z-index:99;margin-left:217px;
@@ -105,7 +108,9 @@ body.active{
     margin-top:10px;
 }
 #experience-timeline .vtimeline-date{
-    width:197px;text-align:right;position:absolute;left:0;top:10px;font-weight:300;color:#374054;
+    position:absolute;
+    /* position:absolute; */
+    width:197px;text-align:right;left:0;top:10px;font-weight:300;color:#374054;
 }
 
 
