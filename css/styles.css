@@ -67,7 +67,7 @@ body.active{
     content:'';
     top:0;
     bottom:0;
-    left:240px;
+    left:24%;
     right:auto;
     height:100%;
     width:3px;
@@ -81,20 +81,31 @@ body.active{
     background:#3498db;
     background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
     top:100%;
-    left:240px;
+    left:24%;
 }
 #experience-timeline .vtimeline-content{
-    position:relative;max-width:600px; margin-left:300px;background:#fff;border:1px solid #e6e6e6;padding:15px;border-radius:3px;text-align:justify;
+    position:relative;
+    max-width:600px; 
+    left:30%;
+    background:#fff;
+    border:1px solid #e6e6e6;
+    padding:15px;
+    border-radius:3px;
 }
 #experience-timeline .vtimeline-content h3{
-    font-size:1.5em;font-weight:300;color:#374054;display:inline-block;margin:0;
+    font-size:1.5em;
+    font-weight:300;
+    color:#374054;
+    display:inline-block;
+    margin:0 530px 15px 0;
+    /* text-align:left; */
 }
 #experience-timeline .vtimeline-content h4{
-    font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0;
+    font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0;text-align:justify;
 }
 
 #experience-timeline .vtimeline-content p{
-    color:#74808a;font-size:0.9em;margin:0;
+    color:#74808a;font-size:0.9em;margin:0;text-align:justify;
 }
 #experience-timeline .vtimeline-point{
     position:relative;
@@ -107,7 +118,10 @@ body.active{
     color:#fff;
     width:50px;height:50px;
     background:#246a99;
-    border-radius:50%;float:left;z-index:99;margin-left:217px;
+    border-radius:50%;
+    float:left;
+    z-index:99;
+    margin-left:21.7%;
 }
 #experience-timeline .vtimeline-icon i{
     display:block;
