@@ -1,0 +1,356 @@
+body{
+    font-family:'Arial, Helvetica, sans-serif', sans-serif;font-size:16px;
+}
+body.active{
+    overflow:hidden;z-index:-1;
+}
+
+/*! experience timeline */
+.no-js #experience-timeline>div{
+    background:#fff;padding:10px;margin-bottom:10px;border:1px solid #dcd9d9
+}
+.no-js #experience-timeline>div h3{
+    font-size:1.5em;font-weight:300;color:#374054;display:inline-block;margin:0
+}
+.no-js #experience-timeline>div h4{
+    font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0;
+}
+.no-js #experience-timeline>div p{
+    color:#74808a;font-size:0.9em;margin:0;
+}
+.no-js #experience-timeline:before,
+.no-js #experience-timeline:after{
+    content:none;
+}
+@keyframes dropHeader{
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+
+
+
+#experience{
+    padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9;
+}
+#experience h2{
+    color:#374054
+}
+
+#experience-timeline{
+    margin:30px auto 0 auto;
+    position:relative;
+    max-width:1000px
+}
+#experience-timeline:before{
+    position:absolute;
+    content:'';top:0;
+    bottom:0;
+    left:303px;
+    right:auto;
+    height:100%;
+    width:3px;
+    background:#3498db;
+    z-index:0
+}
+#experience-timeline:after{
+    position:absolute;content:'';width:3px;height:40px;background:#3498db;background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));top:100%;left:303px;
+}
+#experience-timeline .vtimeline-content{
+    margin-left:350px;background:#fff;border:1px solid #e6e6e6;padding:15px;border-radius:3px;text-align:left;
+}
+#experience-timeline .vtimeline-content h3{
+    font-size:1.5em;font-weight:300;color:#374054;display:inline-block;margin:0;
+}
+#experience-timeline .vtimeline-content h4{
+    font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0;
+}
+
+#experience-timeline .vtimeline-content p{
+    color:#74808a;font-size:0.9em;margin:0;
+}
+#experience-timeline .vtimeline-point{
+    position:relative;
+    display:block;
+    vertical-align:top;
+    margin-bottom:30px;
+}
+#experience-timeline .vtimeline-icon{
+    position:relative;color:#fff;
+    width:50px;height:50px;
+    background:#195c88;
+    border-radius:50%;float:left;z-index:99;margin-left:280px;
+}
+#experience-timeline .vtimeline-icon i{
+    display:block;
+    font-size:2em;
+    margin-top:10px;
+
+}
+#experience-timeline .vtimeline-date{
+    width:260px;text-align:right;position:absolute;left:0;top:10px;font-weight:300;color:#374054;
+}
+
+
+
+
+/*! publication-timeline 属性信息 */
+/*! publication timeline? */
+.no-js #publication-timeline>div{
+    background:#fff;padding:10px;margin-bottom:10px;border:1px solid #dcd9d9
+}
+.no-js #publication-timeline>div h3{
+    font-size:1.5em;font-weight:300;color:#374054;display:inline-block;margin:0
+}
+.no-js #publication-timeline>div h4{
+    font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0;
+}
+.no-js #publication-timeline>div p{
+    color:#74808a;font-size:0.9em;margin:0;
+}
+.no-js #publication-timeline:before,
+.no-js #publication-timeline:after{
+    content:none;
+}
+@keyframes dropHeader{
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+#publication{
+    padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9;
+}
+
+#publication h2{
+    color:#374054
+}
+#publication-timeline{
+    margin:30px auto 0 auto;
+    position:relative;
+    max-width:1000px
+}
+#publication-timeline:before{
+    position:absolute;
+    content:'';top:0;
+    bottom:0;
+    left:103px;
+    right:auto;
+    height:100%;
+    width:3px;
+    background:#3498db;
+    z-index:0
+}
+#publication-timeline:after{
+    position:absolute;
+    content:'';
+    width:3px;
+    height:40px;
+    background:#3498db;
+    background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
+    top:100%;
+    left:103px;
+}
+#publication-timeline .vtimeline-content2{
+    margin-left:150px;
+    background:#fff;
+    border:1px solid #e6e6e6;
+    padding:15px;
+    border-radius:3px;
+    text-align:left;
+}
+#publication-timeline .vtimeline-content2 h3{
+    font-size:1.5em;
+    font-weight:300;
+    color:#374054;
+    display:inline-block;
+    margin:0;
+}
+#publication-timeline .vtimeline-content2 h4{
+    font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0;
+}
+
+#publication-timeline .vtimeline-content2 p{
+    color:#74808a;font-size:0.9em;margin:0;
+}
+
+
+#publication-timeline .vtimeline-point2{
+    position:relative;display:block;
+    vertical-align:top;
+    margin-bottom:30px;
+}
+#publication-timeline .vtimeline-icon2{
+    position:relative;color:#fff;
+    width:50px;
+    height:50px;
+    background:#195c88;
+    border-radius:50%;
+    float:left;
+    z-index:99;
+    margin-left:280px;
+}
+#publication-timeline .vtimeline-icon2 i{
+    display:block;
+    font-size:2em;
+    margin-top:10px;
+    font-family: 'Font Awesome';
+    content: '\f017'; /* Font Awesome code for the clock icon */
+    
+}
+#publication-timeline .vtimeline-date2{
+    width:60px;
+    text-align:right;
+    position:absolute;
+    left:0;
+    top:10px;
+    font-weight:300;
+    color:#374054;
+}
+
+/* ============================== */
+#publication-timeline.vtimeline-point2{
+    position:relative;display:block;
+    vertical-align:top;
+    margin-bottom:30px;
+}
+#publication-timeline.vtimeline-icon2{
+    position:relative;color:#fff;
+    width:50px;
+    height:50px;
+    background:#195c88;
+    border-radius:50%;
+    float:left;
+    z-index:99;
+    margin-left:280px;
+}
+#publication-timeline.vtimeline-icon2 i{
+    display:block;
+    font-size:2em;
+    margin-top:10px;
+    font-family: 'Font Awesome';
+    content: '\f017'; /* Font Awesome code for the clock icon */
+    
+}
+#publication-timeline.vtimeline-date2{
+    width:60px;
+    text-align:right;
+    position:absolute;
+    left:0;
+    top:10px;
+    font-weight:300;
+    color:#374054;
+}
+
+/*!===================================== */
+<div id="projects" class="background-alt-nth">
+<h2 class="heading">3D Models</h2>
+<div class="container">
+
+    <!-- One Project 3DModel Block -->
+    <div class="project shadow-large">
+        <div class="project-glb">
+            <img class="image" src="assets/thumbs/model03-thumb.jpg" alt="assets/fulls/model03-full.glb" />
+        </div>
+    </div>
+    <!-- End of One Project 3DModel Block -->
+
+
+    <div class="project shadow-large">
+        <div class="project-glb">
+            <img class="image" src="assets/thumbs/model04-thumb.jpg" alt="assets/fulls/model04-full.glb" />
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<div id="projects" class="background-alt-nth">
+<h2 class="heading">Unity3d Projects</h2>
+<div class="container-game">
+
+    <!-- One Project Game Block -->
+    <div class="project-game shadow-large">
+        <div class="project-image">
+            <img src="assets/thumbs/project02-thumb.jpg" />
+        </div>
+        <div class="project-info">
+            <h3>Flappy bird demo</h3>
+            <p>
+                这是一个Flappy bird 的 Demo.
+            </p>
+            <a href="https://curryricegames.itch.io/flappybird-demo" target="_blank">View Project</a>
+        </div>
+    </div>
+    <!-- End of One Project Game Block -->
+
+    <div class="project-game shadow-large">
+        <div class="project-image">
+            <img src="assets/thumbs/Counter-thumb.jpg" />
+        </div>
+        <!-- End .project-image -->
+        <div class="project-info">
+            <h3>Counter webgl demo</h3>
+            <p>
+                这是一个在itch.io上的Counter Webgl 的 Demo.
+            </p>
+            <a href="https://curryricegames.itch.io/countertest" target="_blank">View Project</a>
+        </div>
+        <!-- End .project-info -->
+    </div>
+    <!-- End .project -->
+    <div class="project-game shadow-large">
+        <div class="project-image">
+            <img src="assets/thumbs/Counter-thumb.jpg" />
+        </div>
+        <!-- End .project-image -->
+        <div class="project-info">
+            <h3>Counter webgl demo</h3>
+            <p>
+                这是一个在Github pages上的person webpage.
+            </p>
+            <a href="https://bretthuang2019.github.io/CounterWebgl/" target="_blank">View Project</a>
+        </div>
+        <!-- End .project-info -->
+    </div>
+    <!-- End .project -->
+</div>
+</div>
+
+<!-- Different media viewers -->
+
+<!-- image viewer -->
+<div class="overlay-viewer" id="image-viewer">
+<span class="close">&times;</span>
+<img class="modal-content" id="full-image">
+</div>
+<!-- End of image viewer -->
+
+<!-- video viewer -->
+<div class="overlay-viewer" id="video-viewer">
+<span class="close">&times;</span>
+<video id="full-video" class="modal-content" controls autoplay loop src="#">
+    Your browser does not support HTML5 video element.
+</video>
+</div>
+<!-- End of video viewer -->
+
+<!-- glb viewer -->
+<div class="overlay-viewer" id="glb-viewer">
+<span class="close">&times;</span>
+<model-viewer id="full-glb" class="glb-content" src="#" autoplay ar shadow-intensity="1" camera-controls
+    auto-rotate></model-viewer>
+</div>
+<!-- End of glb viewer -->
+
+
+
