@@ -1,4 +1,4 @@
-css/styles.css/*!
+/*!
     Title: Dev Portfolio Template
     Version: 1.2.2
     Last Change: 03/25/2020
@@ -21,6 +21,7 @@ body.active{
 
 
 /*! experience timeline */
+
 .no-js #experience-timeline>div{
     background:#fff;padding:10px;margin-bottom:10px;border:1px solid #dcd9d9
 }
@@ -45,7 +46,6 @@ body.active{
         transform:translateY(0);
     }
 }
-
 
 
 #experience{
@@ -112,6 +112,7 @@ body.active{
     font-size:0.9em;
     margin:0;
     text-align:justify;
+    max-width: 90%;
 }
 #experience-timeline .vtimeline-point{
     position:relative;
@@ -144,6 +145,23 @@ body.active{
     font-weight:300;
     color:#374054;
 }
+@media only screen and (max-width: 600px) {
+    #experience-timeline:before {
+      left: 5%;
+    }
+    #experience-timeline .vtimeline-content h3 {
+      margin: 0 5% 15px 0;
+    }
+    #experience-timeline .vtimeline-content p {
+      max-width: 80%;
+    }
+    #experience-timeline .vtimeline-date {
+      margin-left: -200px;
+    }
+    #experience-timeline .vtimeline-icon {
+      margin-left: 5%;
+    }
+  }  
 
 
 /*! publication-timeline 属性信息 */
@@ -536,7 +554,7 @@ footer{
     color:#374054;margin-bottom:50px;
 }
 
-#projects .project-text {
+#projects .project-text{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -553,7 +571,6 @@ font-size: 1.5em;
 font-weight: 500;
 color: #374054;
 margin: 0 0 15px 0;
-
 }
 
 .project-text p {
@@ -567,13 +584,21 @@ font-size: 0.9em;
     justify-content:center;align-items:center;
 }
 .project{
-    position:relative;min-width:200px;max-height:300px;max-width:900px;margin:0 15px 30px 15px;overflow:hidden;background:#fff;border-radius:4px;
+    position:relative;min-width:200px;
+    max-height:300px;max-width:900px;
+    margin:0 15px 30px 15px;overflow:hidden;background:#fff;
+    border-radius:4px;
 }
 .project-game{
-    position:relative;max-width:900px;height:300px;margin:0 auto 30px auto;overflow:hidden;background:#fff;border-radius:4px;display:flex;
+    position:relative;max-width:900px;
+    height:300px;
+    margin:0 auto 30px auto;overflow:hidden;background:#fff;
+    border-radius:4px;
+    display:flex;
 }
 .project-game .project-image{
-    width:300px;height:300px;object-fit:cover;overflow:hidden;flex-shrink:0;
+    width:300px;height:300px;object-fit:cover;overflow:hidden;
+    flex-shrink:0;
 }
 .project-game .project-image img{
     width:100%
@@ -582,7 +607,8 @@ font-size: 0.9em;
     align-self:center;flex-grow:1;padding:15px;
 }
 .project-info h3{
-    font-size:1.5em;font-weight:300;color:#374054;margin:0 0 15px 0;
+    font-size:1.5em;font-weight:300;color:#374054;
+    margin:0 0 15px 0;
 }
 .project-info p{
     color:#74808a;margin:0 0 15px 0;font-size:0.9em;
@@ -592,7 +618,6 @@ font-size: 0.9em;
 }
 
 
-/*！3Dprojects属性设置??? */
 #more-projects{display:none}
 .project-image .image{
     cursor:pointer;transition:0.3s
@@ -645,7 +670,8 @@ font-size: 0.9em;
     from{transform:scale(0)}to{transform:scale(1)}
 }
 .overlay-viewer .close{
-    position:absolute;top:15px;right:35px;color:#f1f1f1;font-size:8rem;font-weight:bold;transition:0.3s;
+    position:absolute;top:15px;right:35px;color:#f1f1f1;
+    font-size:8rem;font-weight:bold;transition:0.3s;
 }
 .overlay-viewer .close:hover,.overlay-viewer .close:focus{
     color:#bbb;
@@ -655,6 +681,7 @@ font-size: 0.9em;
 @media only screen and (max-width: 700px){
     .modal-content{width:100%}
 }
+
 
 /*！skills 属性设置 */
 #skills{
@@ -700,7 +727,7 @@ text-align: justify;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 #skills li {
@@ -708,12 +735,24 @@ text-align: justify;
   margin: 0px 7px 10px auto;
   padding: 5px 5px;
   color: #374054;
-  background: #e4e4ea;
+  background: #f0f2f6;
   list-style: none;
   cursor: default;
   font-size: 1.2em;
   width: max-content;
   border-radius: 5px;
+}
+@media only screen and (max-width: 767px) {
+    #skills ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+    }
+    
+    #skills li {
+      margin: 0px 7px 10px 0px;
+      width: calc(50% - 7px);
+    }
 }
 
 
@@ -875,42 +914,10 @@ text-align: justify;
 #lead-content a{
     padding:10px 20px
 }
-#lead-down{
-    display:none
-}
-.education-block h3,
-.education-block span{
-    float:none
-}
-.project-info{
-    position:relative;
-    margin:0;
-    padding:30px 15px;
-    top:auto;
-    transform:none;
-}
-.project-game 
-.project-image{
-    display:none
-}
-footer{
-    text-align:center
-}
-.social{
-    text-align:center
-}
-}
-@media only screen and (max-width: 480px){
-    #lead-content h1{
-        font-size:1.5em
-    }
-    #lead-content h2{
-        font-size:1em
-    }
-    #lead-content a{
-        font-size:0.9em;
-        padding:5px 10px;
-    }
+/* #lead-down{
+    display:none */
+/* } */
+
 
 }
 
