@@ -533,15 +533,15 @@ footer{
     max-width:900px;margin:0 auto 30px auto;padding:15px;border:1px solid #dcd9d9;text-align:justify;background:#fff;
 }
 .education-block h3{
-    font-weight:500;float:left;margin:0;color:#374054;
+    font-weight:500;float:left;margin:0;color:#374054;text-align:justify;
 }
 .education-block span{color:#74808a;float:right;
 }
 .education-block h4{
-    color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0;
+    color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0;text-align:justify;
 }
 .education-block p,.education-block ul{
-    margin:0;color:#74808a;font-size:0.9em;
+    margin:0;color:#74808a;font-size:0.9em;text-align:justify;
 }
 .education-block ul{padding:0 0 0 15px}
 
@@ -585,7 +585,7 @@ font-size: 0.9em;
 }
 .project{
     position:relative;min-width:200px;
-    max-height:300px;max-width:900px;
+    max-height:500px;max-width:900px;
     margin:0 15px 30px 15px;overflow:hidden;background:#fff;
     border-radius:4px;
 }
@@ -918,6 +918,4 @@ text-align: justify;
     display:none */
 /* } */
 
-
 }
-
