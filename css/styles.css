@@ -48,7 +48,7 @@ body.active{
 
 
 #experience{
-    padding:50px 15px;
+    padding:30px 15px;
     text-align:center;
     border-bottom:1px solid #dcd9d9;
 }
@@ -57,16 +57,16 @@ body.active{
 }
 
 #experience-timeline{
-    margin:30px auto 0 auto;
+    margin:10px auto 0 auto;
     position:relative;
-    max-width:1000px
+    max-width:1150px
 }
 #experience-timeline:before{
     position:absolute;
     content:'';
     top:0;
     bottom:0;
-    left:24%;
+    left:23.5%;
     right:auto;
     height:100%;
     width:3px;
@@ -80,15 +80,15 @@ body.active{
     background:#3498db;
     background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
     top:100%;
-    left:24%;
+    left:23.5%;
 }
 #experience-timeline .vtimeline-content{
     position:relative;
-    max-width:600px; 
+    max-width:860px; 
     left:30%;
     background:#fff;
     border:1px solid #e6e6e6;
-    padding:15px;
+    padding:25px;
     border-radius:3px;
 }
 #experience-timeline .vtimeline-content h3{
@@ -96,7 +96,7 @@ body.active{
     font-weight:300;
     color:#374054;
     display:inline-block;
-    margin:0 530px 15px 0;
+    margin:0 1530px 15px 0;
 }
 #experience-timeline .vtimeline-content h4{
     font-size:1.2em;
@@ -111,7 +111,7 @@ body.active{
     font-size:0.9em;
     margin:0;
     text-align:justify;
-    max-width: 90%;
+    max-width: 100%;
 }
 #experience-timeline .vtimeline-point{
     position:relative;
@@ -137,7 +137,7 @@ body.active{
 #experience-timeline .vtimeline-date{
     position:relative;
     /* position:absolute; */
-    margin-left:-960px;
+    margin-left:-1120px;
     width:197px;
     text-align:right;
     top:10px;
@@ -193,7 +193,7 @@ body.active{
 }
 
 #publication{
-    padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9;
+    padding:30px 15px;text-align:center;border-bottom:1px solid #dcd9d9;
 }
 
 #publication h2{
@@ -202,7 +202,7 @@ body.active{
 #publication-timeline{   /*! 距离上面的距离 */
     margin:30px auto 0 auto;
     position:relative;
-    max-width:900px
+    max-width:1200px
 }
 #publication-timeline:before{  /*! 那条蓝线的上端 */
     position:absolute;
@@ -218,7 +218,7 @@ body.active{
 #publication-timeline.vtimeline-content2{   /*! 白盒子 border */
     background:#fff;
     left:10px;
-    max-width:900px;
+    max-width:1200px;
     border:1px solid #e6e6e6;
     padding:15px;
     border-radius:3px;
@@ -437,9 +437,9 @@ footer{
 #lead{
     position:relative;
     height:100vh;
-    min-height:380px;
-    max-height:480px;
-    background:url(../assets/lead-bg.jpg);
+    min-height:180px;
+    max-height:220px;
+    background:url(../assets/lead-bg-2025.jpg);
     background-size:cover;
     padding:15px;
     overflow:hidden;
@@ -456,9 +456,9 @@ footer{
 #lead-content h2{margin:0}
 #lead-content h1{
     color:#fff;
-    font-weight:900;
-    font-size:5em;
-    text-transform:uppercase;
+    font-weight:600;
+    font-size:3em;
+    /* text-transform:uppercase; */
     letter-spacing:0.05em;
     line-height:0.9em;
 }
@@ -518,29 +518,29 @@ footer{
 
 
 
-/*！原始的education 现在的work experience */
+/*！原始的education 现在的work experience  #justify */ 
 #education{
-    padding:50px 15px 20px 15px;border-bottom:1px solid #dcd9d9;text-align:center;
+    padding:30px 15px 20px 15px;border-bottom:1px solid #dcd9d9;text-align:center;
 }
 #education h2{
     color:#374054;margin-bottom:50px
 }
 .education-block{
-    max-width:900px;margin:0 auto 30px auto;padding:15px;border:1px solid #dcd9d9;text-align:justify;
+    max-width:1200px;margin:0 auto 30px auto;padding:15px;border:1px solid #dcd9d9;text-align:left; 
 }
 .education-block2{
-    max-width:900px;margin:0 auto 30px auto;padding:15px;border:1px solid #dcd9d9;text-align:justify;background:#fff;
+    max-width:1200px;margin:0 auto 30px auto;padding:15px;border:1px solid #dcd9d9;text-align:left;background:#fff;
 }
 .education-block h3{
-    font-weight:500;float:left;margin:0;color:#374054;text-align:justify;
+    font-weight:500;float:left;margin:0;color:#374054;text-align:left;
 }
 .education-block span{color:#74808a;float:right;
 }
 .education-block h4{
-    color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0;text-align:justify;
+    color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0;text-align:left;
 }
 .education-block p,.education-block ul{
-    margin:0;color:#74808a;font-size:0.9em;text-align:justify;
+    margin:0;color:#74808a;font-size:0.9em;text-align:left;
 }
 .education-block ul{padding:0 0 0 15px}
 
@@ -622,6 +622,12 @@ font-size: 0.9em;
     cursor:pointer;transition:0.3s
 }
 .project-image .image:hover{opacity:0.7}
+.project-video {
+    display: flex; /* Use Flexbox to arrange items in a row */
+    justify-content: space-between; /* Ensure even spacing between images */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Optional: Add a gap between images */
+  }
 .project-video .image{
     cursor:pointer;transition:0.3s
 }
